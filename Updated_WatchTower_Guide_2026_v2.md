@@ -204,16 +204,5 @@ docker logs $(docker ps | grep watchtower | awk '{print $1}')
 
 Gentag øvelsen med et projekt fra 2. semester: Tilføj passende HEALTHCHECK (fx HTTP endpoint i webapp), brug labels/opt-in i WatchTower, og vis jeres løsning i næste undervisning.
 
-## Refleksionsspørgsmål
-
-1. Hvilke konkrete fordele gav multistage (størrelse, sikkerhed, hastighed)?
-2. Hvorfor er en deterministisk, hurtig healthcheck passende for en console-app?
-3. Hvad gør WatchTower, når der er ny digest, og hvorfor er “samme Compose-parametre” vigtigt?
-4. Hvilke dele af workflowet er kritiske for, at image ender i GHCR (login, tags, file, context)?
-5. Hvor bruger du repo-URL (kildekode) vs. registry-URL (images), og hvorfor er forveksling et problem?
-6. Hvilke fejl kan opstå (permissions, Dockerfile-sti, branch), og hvordan løser I dem?
-7. Hvordan ville I ændre setup’et for et kritisk system (labels/opt-in, planlagte vinduer, pinning)?
-8. Hvordan standardiserer I workflows i større teams (code owners, reviews, version-tags)?
-9. Hvilke ændringer kræver et skifte til Docker Hub (login, tags, synlighed)?
 
 
