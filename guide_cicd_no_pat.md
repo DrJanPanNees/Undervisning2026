@@ -102,9 +102,9 @@ git commit -m "Initial commit"
 git remote add origin https://github.com/DrJanPanNees/HelloWatchTower2.git
 git push -u origin main
 
-Indtast brugernavn med små, password er oprettet i: 
+Indtast brugernavn med små, password er det underlige i fik med SSH key'en.
 ---
-
+```
 ## DEL 2: Produktionsmaskinen (Udstillingsvinduet)
 
 ### 4. Gør pakken Public
