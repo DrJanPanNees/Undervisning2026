@@ -147,6 +147,10 @@ services:
     command: --label-enable
 ```
 
+### 5. Opret jeres Github repo på www.github.com
+```
+Ændre jeres Program.cs fil
+
 ---
 
 ## 🛠 Fejlfinding
