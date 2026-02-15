@@ -109,6 +109,7 @@ Indtast brugernavn med små, password er det underlige i fik med SSH key'en.
 tags: ghcr.io/${{ env.OWNER_LC }}/hellowatchtower2:latest
 ```
 Kør følgende igen:
+```
 git add .
 git commit -m "Test af nyt image navn"
 git push origin main
