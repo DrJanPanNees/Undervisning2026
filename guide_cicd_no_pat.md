@@ -120,7 +120,7 @@ På din server (eller lokale test-maskine), kør denne `docker-compose.yml`:
 ```yaml
 services:
   app:
-    image: ghcr.io/<dit-brugernavn-i-små-bogstaver>/helloworld:latest
+    image: ghcr.io/drjanpannees/hellowatchtower2:latest
     ports:
       - "8080:8080"
     labels:
