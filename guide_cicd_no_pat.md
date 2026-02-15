@@ -91,7 +91,18 @@ jobs:
           push: true
           tags: ghcr.io/${{ env.OWNER_LC }}/helloworld:latest
 ```
+### 4. Opret jeres Github repo på www.github.com
+1. Opret et repo på github.com det giver dig en sti der ser noget ala: https://github.com/DrJanPanNees/HelloWatchTower2.git
+2. Du skal kende dit Brugerhavn
+3. Du skal oprette en kode til github: Settings -> SSH keys -> New SSH key (gem denne nøgle et sikkert sted)
+```
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/DrJanPanNees/HelloWatchTower2.git
+git push -u origin main
 
+Indtast brugernavn med små, password er oprettet i: 
 ---
 
 ## DEL 2: Produktionsmaskinen (Udstillingsvinduet)
