@@ -149,7 +149,27 @@ services:
 
 ### 5. Opret jeres Github repo på www.github.com
 ```
-Ændre jeres Program.cs fil
+Ændre jeres Program.cs fil:
+```
+// Gammel kode:
+app.MapGet("/", () => "Hello from Service A!");
+
+// Ny kode (ændr dette):
+app.MapGet("/", () => "🚀 CI/CD VIRKER! Opdateret kl. " + DateTime.Now.ToLongTimeString());
+```
+git add .
+git commit -m "Test af automatisk deploy"
+git push origin main
+```
+Hvad skal der ske på Produktionsmaskinen?
+Svaret er: Ingenting! (Det er det, der er det smarte).
+
+Hvis du har sat din docker-compose.yml rigtigt op med Watchtower, så holder Watchtower øje med GitHub for dig. Men hvis du vil følge med i "maskinrummet" på din server, mens det sker, kan du gøre følgende:
+
+Se loggen fra Watchtower:
+Hvis du vil se Watchtower opdage den nye version, kan du køre denne kommando på serveren:
+docker logs -f <navnet-på-din-watchtower-container>
+Her vil du se teksten: "Found new image, updating..." når den opdager dit nye push.
 
 ---
 
