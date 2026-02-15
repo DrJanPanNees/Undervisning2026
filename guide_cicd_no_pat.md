@@ -103,6 +103,10 @@ git remote add origin https://github.com/DrJanPanNees/HelloWatchTower2.git
 git push -u origin main
 
 Indtast brugernavn med små, password er det underlige i fik med SSH key'en.
+```
+Ændre i filen .github/workflows/docker-publish.yml
+```
+tags: ghcr.io/${{ env.OWNER_LC }}/hellowatchtower2:latest
 ---
 ```
 ## DEL 2: Produktionsmaskinen (Udstillingsvinduet)
