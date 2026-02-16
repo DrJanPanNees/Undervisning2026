@@ -138,7 +138,7 @@ services:
       com.centurylinklabs.watchtower.enable: "true"
 
   watchtower:
-    image: containrrr/watchtower
+    image: nickfedor/watchtower
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
