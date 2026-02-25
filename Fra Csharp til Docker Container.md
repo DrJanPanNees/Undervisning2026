@@ -75,15 +75,3 @@ docker run --rm ucl/scriptapp:1.0
 docker run --rm ucl/scriptapp:1.0 --name "Aurelia" --count 5
 docker run --rm -e APP_ENV=production ucl/scriptapp:1.0
 ```
-
-## 5) Opgaver
-1. Få programmet til at bygge og køre i Docker.
-2. Tilføj `--reverse`.
-3. Tilføj `APP_MODE` = basic/verbose.
-4. Lav version `1.1`.
-5. (Valgfrit) Skift til .NET 8.
-
-## 6) Kontrolspørgsmål
-- Hvad er forskellen på SDK og runtime?
-- Hvorfor multi-stage?
-- CLI-argumenter vs miljøvariable?
